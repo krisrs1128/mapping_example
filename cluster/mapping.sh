@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-cd /home/selection_expers
+cd /home/mapping_example
 python3 src/exper.py
