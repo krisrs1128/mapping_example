@@ -10,4 +10,4 @@
 
 rsync -avz /scratch/mtrazzak/datasets/lcm/ $SLURM_TMPDIR
 module load singularity
-singularity shell --nv --bind $SLURM_TMPDIR:/data/,$HOME/mapping_example:/home/mapping_example,$SCRATCH/:$SCRATCH/ $SCRATCH/images/mapping.img /home/mapping_example/cluster/mapping.sh
+singularity shell --nv --bind $SLURM_TMPDIR:/data/,$HOME/mapping_example:/home/mapping_example,$SCRATCH/:/$SCRATCH/ /scratch/sankarak/images/mapping.img /home/mapping_example/cluster/mapping.sh
